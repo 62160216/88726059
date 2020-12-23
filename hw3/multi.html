@@ -1,0 +1,26 @@
+<script>
+    function multi(n) {
+        one = document.getElementById('tdOne');
+        one.innerHTML = "";
+        two = document.getElementById('tdTwo');
+        two.innerHTML = "";
+
+        for (i = 1; i <= 12; i++) {
+            one.innerHTML += n + " x " + i +"<br>";}
+        
+        for (i = 1; i <= 12; i++) {
+            two.innerHTML +="= "+(n * i) + "<br>";}}
+     
+</script>
+
+<h3>2.โปรเเกรม สูตรคูณ-multi.html</h3>
+
+    <input  type="text" id="txt" placeholder="สูตรคูณเเม่ X" onkeyup="multi(this.value);" >
+    
+ <table >
+     <tr>
+         <td id="tdOne"></td>
+         <td id="tdTwo"></td>
+     </tr>
+    
+ </table>
